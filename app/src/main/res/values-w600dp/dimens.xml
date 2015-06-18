@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="logo_size">150dp</dimen>
+    <dimen name="marginButton_band">40dp</dimen>
+</resources>

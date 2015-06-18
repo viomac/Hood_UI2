@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MainLogo">
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+    <style name="MainButtonsContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginBottom">40dp</item>
+    </style>
+
+    <style name="MainButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">#00ffffff</item>
+    </style>
+
+    <style name="VerticalLineSeparator">
+        <item name="android:background">@drawable/vertical_line</item>
+    </style>
+
+</resources>

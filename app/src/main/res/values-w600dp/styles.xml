@@ -1,0 +1,26 @@
+<resources>
+    <style name="MainLogo">
+        <item name="android:layout_marginTop">100dp</item>
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">160dp</item>
+    </style>
+
+    <style name="MainButtonsContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginBottom">60dp</item>
+    </style>
+
+    <style name="MainButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">#00ffffff</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="VerticalLineSeparator">
+        <item name="android:background">@drawable/vertical_line_w600dp</item>
+    </style>
+
+</resources>

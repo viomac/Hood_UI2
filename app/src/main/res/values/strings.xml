@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hood_UI</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="login">Iniciar Sesión</string>
+    <string name="signup">Registrarse</string>
+</resources>
