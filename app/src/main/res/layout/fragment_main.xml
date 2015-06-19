@@ -10,11 +10,10 @@
         style="@style/MainLogo"
         android:layout_centerHorizontal="true"/>
     <LinearLayout
-        style="@style/MainButtonsContent"
+        style="@style/MainButtonsContainer"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/band"
-        >
+        android:background="@drawable/band">
         <Button android:id="@+id/LoginLinkButton"
             style="@style/MainButtons"
             android:layout_gravity="center_horizontal"
@@ -22,8 +21,6 @@
             android:text="@string/login"/>
         <ImageView
             style="@style/VerticalLineSeparator"
-            android:layout_width="0.5dp"
-            android:layout_height="match_parent"
             android:layout_weight="0"/>
         <Button android:id="@+id/SignupLinkButton"
             style="@style/MainButtons"
