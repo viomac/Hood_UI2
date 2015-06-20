@@ -35,6 +35,14 @@
         <item name="android:textSize">22sp</item>
     </style>
 
+    <style name="UserAlreadyExistAlert">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fffff085</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_marginTop">140dp</item>
+    </style>
+
     <!-- *************  Login and Signup  ************* -->
     <style name="FirstFieldContainer">
         <item name="android:layout_width">match_parent</item>

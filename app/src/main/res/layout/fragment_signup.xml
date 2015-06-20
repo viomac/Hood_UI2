@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur_bg"
+    tools:context="com.example.richit.hood_ui.Signup">
+
+    <TextView android:id="@+id/ErrorText"
+        android:text="¡Lo sentimos! Este usuario ya existe."
+        android:gravity="center"
+        style="@style/UserAlreadyExistAlert"/>
+
+    <LinearLayout android:id="@+id/NameContainer"
+        android:layout_below="@+id/ErrorText"
+        style="@style/FieldContainer">
+        <ImageView android:src="@drawable/name"
+            android:layout_weight="0.7"
+            style="@style/Icons"/>
+        <EditText android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:layout_weight="0.3"
+            style="@style/TextFields"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/NameSeparator"
+        android:layout_below="@id/NameContainer"
+        style="@style/HorizontalSeparator"/>
+
+    <LinearLayout android:id="@+id/EmailContainer"
+        android:layout_below="@+id/NameSeparator"
+        style="@style/FieldContainer">
+        <ImageView android:src="@drawable/email"
+            android:layout_weight="0.7"
+            style="@style/Icons"/>
+        <EditText android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:layout_weight="0.3"
+            style="@style/TextFields"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/EmailSeparator"
+        android:layout_below="@id/EmailContainer"
+        style="@style/HorizontalSeparator"/>
+
+    <LinearLayout android:id="@+id/PhoneContainer"
+        android:layout_below="@+id/EmailSeparator"
+        style="@style/FieldContainer">
+        <ImageView android:src="@drawable/phone"
+            android:layout_weight="0.7"
+            style="@style/Icons"/>
+        <EditText android:hint="Teléfono"
+            android:inputType="phone"
+            android:layout_weight="0.3"
+            style="@style/TextFields"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/PhoneSeparator"
+        android:layout_below="@id/PhoneContainer"
+        style="@style/HorizontalSeparator"/>
+
+    <LinearLayout android:id="@+id/PasswordContainer"
+        android:layout_below="@+id/PhoneSeparator"
+        style="@style/FieldContainer">
+        <ImageView android:src="@drawable/password"
+            android:layout_weight="0.7"
+            style="@style/Icons"/>
+        <EditText android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_weight="0.3"
+            style="@style/TextFields"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/PassSeparator"
+        android:layout_below="@id/PasswordContainer"
+        style="@style/HorizontalSeparator"/>
+
+    <Button android:text="Continuar"
+        android:layout_alignParentBottom="true"
+        style="@style/ContinueButton"/>
+
+</RelativeLayout>

@@ -38,6 +38,7 @@
         android:layout_below="@+id/PasswordSeparator"
         android:gravity="end"
         android:paddingRight="30dp"
+        android:layout_marginTop="10dp"
         style="@style/ErrorAlert"/>
 
     <Button android:text="Continuar"
