@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blur_bg"
+    android:weightSum="6"
+    tools:context="com.example.richit.hood_ui.login_new">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="5.3">
+        <LinearLayout android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:weightSum="8"
+            android:gravity="center">
+
+            <LinearLayout android:layout_weight="1"
+                style="@style/FieldContainer">
+                <ImageView android:src="@drawable/email"
+                    android:layout_weight="0.7"
+                    style="@style/Icons"/>
+                <EditText android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight="0.3"
+                    style="@style/TextFields"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/EmailSeparator"
+                style="@style/HorizontalSeparator"/>
+
+            <LinearLayout android:layout_weight="1"
+                style="@style/FieldContainer">
+                <ImageView android:src="@drawable/password"
+                    android:layout_weight="0.7"
+                    style="@style/Icons"/>
+                <EditText android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:layout_weight="0.3"
+                    style="@style/TextFields"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/PassSeparator"
+                style="@style/HorizontalSeparator"/>
+
+            <TextView  android:text="Olvidé mi contraseña"
+                android:id="@+id/ErrorText"
+                android:layout_below="@+id/PasswordSeparator"
+                android:gravity="end"
+                android:paddingRight="30dp"
+                android:layout_marginTop="10dp"
+                style="@style/ErrorAlert"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <Button android:text="CONTINUAR"
+            android:layout_alignParentBottom="true"
+            style="@style/ContinueButton" />
+    </LinearLayout>
+
+
+</LinearLayout>

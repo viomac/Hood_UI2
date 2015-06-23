@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blur_bg"
+    android:weightSum="6"
+    tools:context="com.example.richit.hood_ui.SignupNew">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="5.3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:weightSum="10"
+            android:gravity="center">
+
+            <TextView android:id="@+id/ErrorText"
+                android:text="¡Lo sentimos! Este usuario ya existe."
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/UserAlreadyExistAlert"/>
+
+            <LinearLayout android:layout_weight="1"
+                style="@style/FieldContainer">
+                <ImageView android:src="@drawable/name"
+                    android:layout_weight="0.7"
+                    style="@style/Icons"/>
+                <EditText android:hint="Nombre"
+                    android:inputType="textPersonName"
+                    android:layout_weight="0.3"
+                    style="@style/TextFields"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/NameSeparator"
+                style="@style/HorizontalSeparator"/>
+
+            <LinearLayout android:layout_weight="1"
+                style="@style/FieldContainer">>
+                <ImageView android:src="@drawable/email"
+                    android:layout_weight="0.7"
+                    style="@style/Icons"/>
+                <EditText android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight="0.3"
+                    style="@style/TextFields"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/EmailSeparator"
+                style="@style/HorizontalSeparator"/>
+
+            <LinearLayout android:layout_weight="1"
+                style="@style/FieldContainer">
+                <ImageView android:src="@drawable/phone"
+                    android:layout_weight="0.7"
+                    style="@style/Icons"/>
+                <EditText android:hint="Teléfono"
+                    android:inputType="phone"
+                    android:layout_weight="0.3"
+                    style="@style/TextFields"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/PhoneSeparator"
+                style="@style/HorizontalSeparator"/>
+
+            <LinearLayout android:layout_weight="1"
+                style="@style/FieldContainer">
+                <ImageView android:src="@drawable/email"
+                    android:layout_weight="0.7"
+                    style="@style/Icons"/>
+                <EditText android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:layout_weight="0.3"
+                    style="@style/TextFields"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/PassSeparator"
+                style="@style/HorizontalSeparator"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <Button android:text="Continuar"
+            android:layout_alignParentBottom="true"
+            style="@style/ContinueButton" />
+    </LinearLayout>
+
+</LinearLayout>

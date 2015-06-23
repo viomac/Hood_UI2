@@ -1,31 +1,86 @@
 <resources>
-
+    <color name="custom_theme_color">#ff4bff4b</color>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- *****************  Main  ******************** -->
     <style name="MainLogo">
         <item name="android:layout_marginTop">60dp</item>
         <item name="android:layout_width">100dp</item>
         <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/logo</item>
+        <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
-    <style name="MainButtonsContent">
+    <style name="MainButtonsContainer">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">50dp</item>
-        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:background">@drawable/band</item>
     </style>
 
     <style name="MainButtons">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">#ffffffff</item>
         <item name="android:background">#00ffffff</item>
     </style>
 
     <style name="VerticalLineSeparator">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:background">@drawable/vertical_line</item>
     </style>
+
+    <!-- *************  ErrorAlert  ************* -->
+    <style name="ErrorAlert">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fffff085</item>
+    </style>
+
+    <style name="UserAlreadyExistAlert">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fffff085</item>
+    </style>
+
+    <!-- *************  Login and Signup  ************* -->
+
+    <style name="FieldContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="TextFields">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fffbfff9</item>
+        <item name="android:background">#00ffffff</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textColorHint">#ffc2c6c0</item>
+    </style>
+
+    <style name="Icons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="HorizontalSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@drawable/horizontal_line</item>
+    </style>
+    
+    <style name="ContinueButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">#57000000</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
 
 </resources>

@@ -1,11 +1,13 @@
 <resources>
+
+    <!-- *****************  Main  ******************** -->
     <style name="MainLogo">
         <item name="android:layout_marginTop">100dp</item>
         <item name="android:layout_width">160dp</item>
         <item name="android:layout_height">160dp</item>
     </style>
 
-    <style name="MainButtonsContent">
+    <style name="MainButtonsContainer">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">80dp</item>
         <item name="android:layout_marginBottom">60dp</item>
@@ -20,7 +22,71 @@
     </style>
 
     <style name="VerticalLineSeparator">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:background">@drawable/vertical_line_w600dp</item>
     </style>
+
+    <!-- *************  ErrorAlert  ************* -->
+    <style name="ErrorAlert">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fffff085</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="UserAlreadyExistAlert">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fffff085</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_marginTop">140dp</item>
+    </style>
+
+    <!-- *************  Login and Signup  ************* -->
+    <style name="FirstFieldContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">300dp</item>
+    </style>
+
+    <style name="FieldContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+    <style name="TextFields">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fffbfff9</item>
+        <item name="android:background">#00ffffff</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textColorHint">#ffc2c6c0</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="Icons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="HorizontalSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/horizontal_line_w600dp</item>
+    </style>
+
+    <style name="ContinueButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:background">#57000000</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_marginBottom">55dp</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+
 
 </resources>
