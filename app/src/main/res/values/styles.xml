@@ -40,12 +40,6 @@
         <item name="android:textColor">#fffff085</item>
     </style>
 
-    <style name="UserAlreadyExistAlert">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">#fffff085</item>
-    </style>
-
     <!-- *************  Login and Signup  ************* -->
 
     <style name="FieldContainer">
@@ -61,6 +55,7 @@
         <item name="android:textColor">#fffbfff9</item>
         <item name="android:background">#00ffffff</item>
         <item name="android:paddingTop">8dp</item>
+        <item name="android:layout_marginRight">30dp</item>
         <item name="android:textColorHint">#ffc2c6c0</item>
     </style>
 

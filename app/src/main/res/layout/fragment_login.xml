@@ -30,12 +30,12 @@
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="E-mail"
+                    android:id="@+id/EmailText"
                     android:inputType="textEmailAddress"
                     android:layout_weight="0.3"
                     style="@style/TextFields"/>
             </LinearLayout>
-            <ImageView android:id="@+id/EmailSeparator"
-                style="@style/HorizontalSeparator"/>
+            <ImageView style="@style/HorizontalSeparator"/>
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">
@@ -43,16 +43,15 @@
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="Contraseña"
+                    android:id="@+id/PasswordText"
                     android:inputType="textPassword"
                     android:layout_weight="0.3"
                     style="@style/TextFields"/>
             </LinearLayout>
-            <ImageView android:id="@+id/PassSeparator"
-                style="@style/HorizontalSeparator"/>
+            <ImageView style="@style/HorizontalSeparator"/>
 
             <TextView  android:text="Olvidé mi contraseña"
-                android:id="@+id/ErrorText"
-                android:layout_below="@+id/PasswordSeparator"
+                android:id="@+id/ErrorLabel"
                 android:gravity="end"
                 android:paddingRight="30dp"
                 android:layout_marginTop="10dp"
@@ -66,6 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1">
         <Button android:text="CONTINUAR"
+            android:id="@+id/LoginButton"
             android:layout_alignParentBottom="true"
             style="@style/ContinueButton" />
     </LinearLayout>

@@ -20,11 +20,11 @@
             android:weightSum="10"
             android:gravity="center">
 
-            <TextView android:id="@+id/ErrorText"
+            <TextView android:id="@+id/ErrorLabel"
                 android:text="¡Lo sentimos! Este usuario ya existe."
                 android:gravity="center"
                 android:layout_weight="1"
-                style="@style/UserAlreadyExistAlert"/>
+                style="@style/ErrorAlert"/> 
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">
@@ -32,12 +32,12 @@
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="Nombre"
+                    android:id="@+id/GivenNameText"
                     android:inputType="textPersonName"
                     android:layout_weight="0.3"
                     style="@style/TextFields"/>
             </LinearLayout>
-            <ImageView android:id="@+id/NameSeparator"
-                style="@style/HorizontalSeparator"/>
+            <ImageView style="@style/HorizontalSeparator"/>
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">>
@@ -45,12 +45,12 @@
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="E-mail"
+                    android:id="@+id/EmailText"
                     android:inputType="textEmailAddress"
                     android:layout_weight="0.3"
                     style="@style/TextFields"/>
             </LinearLayout>
-            <ImageView android:id="@+id/EmailSeparator"
-                style="@style/HorizontalSeparator"/>
+            <ImageView style="@style/HorizontalSeparator"/>
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">
@@ -58,12 +58,12 @@
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="Teléfono"
+                    android:id="@+id/PhoneNumberText"
                     android:inputType="phone"
                     android:layout_weight="0.3"
                     style="@style/TextFields"/>
             </LinearLayout>
-            <ImageView android:id="@+id/PhoneSeparator"
-                style="@style/HorizontalSeparator"/>
+            <ImageView style="@style/HorizontalSeparator"/>
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">
@@ -71,12 +71,12 @@
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="Contraseña"
+                    android:id="@+id/PasswordText"
                     android:inputType="textPassword"
                     android:layout_weight="0.3"
                     style="@style/TextFields"/>
             </LinearLayout>
-            <ImageView android:id="@+id/PassSeparator"
-                style="@style/HorizontalSeparator"/>
+            <ImageView style="@style/HorizontalSeparator"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -85,6 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1">
         <Button android:text="Continuar"
+            android:id="@+id/SignupButton"
             android:layout_alignParentBottom="true"
             style="@style/ContinueButton" />
     </LinearLayout>
