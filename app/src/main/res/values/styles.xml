@@ -1,5 +1,5 @@
 <resources>
-    <color name="custom_theme_color">#ff4bff4b</color>
+
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -61,7 +61,7 @@
 
     <style name="Icons">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="HorizontalSeparator">

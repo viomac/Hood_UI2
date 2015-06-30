@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:background="@drawable/blur_bg"
     android:weightSum="6"
-    tools:context="com.example.richit.hood_ui.SignupNew">
+    tools:context="com.example.richit.hood_ui.SignupNew"
+    android:nestedScrollingEnabled="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,15 +21,15 @@
             android:weightSum="10"
             android:gravity="center">
 
-            <TextView android:id="@+id/ErrorLabel"
+            <TextView android:layout_weight="1"
+                android:id="@+id/ErrorLabel"
                 android:text="¡Lo sentimos! Este usuario ya existe."
                 android:gravity="center"
-                android:layout_weight="1"
                 style="@style/ErrorAlert"/> 
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">
-                <ImageView android:src="@drawable/name"
+                <ImageView android:src="@drawable/ic_name_40dp"
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="Nombre"
@@ -41,7 +42,7 @@
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">>
-                <ImageView android:src="@drawable/email"
+                <ImageView android:src="@drawable/ic_email_40dp"
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="E-mail"
@@ -54,7 +55,7 @@
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">
-                <ImageView android:src="@drawable/phone"
+                <ImageView android:src="@drawable/ic_phone_40dp"
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="Teléfono"
@@ -67,8 +68,9 @@
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">
-                <ImageView android:src="@drawable/email"
+                <ImageView android:src="@drawable/ic_password_40dp"
                     android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
                     style="@style/Icons"/>
                 <EditText android:hint="Contraseña"
                     android:id="@+id/PasswordText"
@@ -77,6 +79,10 @@
                     style="@style/TextFields"/>
             </LinearLayout>
             <ImageView style="@style/HorizontalSeparator"/>
+        </LinearLayout>
+        <LinearLayout android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         </LinearLayout>
 
     </LinearLayout>
