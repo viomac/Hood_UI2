@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/blur_bg"
+    android:background="#ffEEEEEE"
     android:weightSum="6"
     tools:context="com.example.richit.hood_ui.login_new"
     android:nestedScrollingEnabled="true">
@@ -13,21 +13,17 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_weight="5.3">
-        <LinearLayout android:layout_weight="0.5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="3"
+            android:layout_weight="1"
             android:weightSum="8"
-            android:gravity="center">
+            android:layout_marginTop="50dp">
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">
-                <ImageView android:src="@drawable/ic_email_40dp"
+                <ImageView android:src="@drawable/ic_email_grey40dp"
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="E-mail"
@@ -40,7 +36,7 @@
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">
-                <ImageView android:src="@drawable/ic_password_40dp"
+                <ImageView android:src="@drawable/ic_password_grey40dp"
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="Contraseña"
@@ -50,6 +46,7 @@
                     style="@style/TextFields"/>
             </LinearLayout>
             <ImageView style="@style/HorizontalSeparator"/>
+
             <TextView  android:text="Olvidé mi contraseña"
                 android:id="@+id/ErrorLabel"
                 android:gravity="end"

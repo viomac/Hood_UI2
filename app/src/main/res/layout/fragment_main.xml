@@ -25,7 +25,8 @@
                 style="@style/MainButtons"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.5"
-                android:text="@string/login"/>
+                android:text="@string/login"
+                />
             <ImageView
                 style="@style/VerticalLineSeparator"
                 android:layout_weight="0"/>
@@ -35,8 +36,6 @@
                 android:layout_weight="0.5"
                 android:text="@string/signup"/>
         </LinearLayout>
-
-
     </LinearLayout>
 
 </LinearLayout>

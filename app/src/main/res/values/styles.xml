@@ -8,27 +8,27 @@
     <!-- *****************  Main  ******************** -->
     <style name="MainLogo">
         <item name="android:layout_marginTop">60dp</item>
-        <item name="android:layout_width">100dp</item>
-        <item name="android:layout_height">100dp</item>
-        <item name="android:src">@drawable/logo</item>
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:src">@drawable/ic_logo_200dp</item>
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
     <style name="MainButtonsContainer">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">50dp</item>
-        <item name="android:background">@drawable/band</item>
+        <item name="android:background">#b3b6f28f</item>
     </style>
 
     <style name="MainButtons">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColor">#ff4C4C4C</item>
         <item name="android:background">#00ffffff</item>
     </style>
 
     <style name="VerticalLineSeparator">
-        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_width">1dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@drawable/vertical_line</item>
     </style>
@@ -38,6 +38,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">#fffff085</item>
+        <item name="android:textSize">6.5pt</item>
     </style>
 
     <!-- *************  Login and Signup  ************* -->
@@ -46,13 +47,15 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">horizontal</item>
-        <item name="android:gravity">center_vertical</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_marginBottom">5dp</item>
     </style>
 
     <style name="TextFields">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">#fffbfff9</item>
+        <item name="android:textColor">#ff4C4C4C</item>
+        <item name="android:textSize">9pt</item>
         <item name="android:background">#00ffffff</item>
         <item name="android:paddingTop">8dp</item>
         <item name="android:layout_marginRight">30dp</item>
@@ -61,7 +64,7 @@
 
     <style name="Icons">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
     </style>
 
     <style name="HorizontalSeparator">
@@ -73,8 +76,8 @@
     <style name="ContinueButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">50dp</item>
-        <item name="android:background">#57000000</item>
-        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">#ffB6F28F</item>
+        <item name="android:textColor">#ff4C4C4C</item>
     </style>
 
 

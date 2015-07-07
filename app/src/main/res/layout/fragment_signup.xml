@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/blur_bg"
+    android:background="#ffEEEEEE"
     android:weightSum="6"
     tools:context="com.example.richit.hood_ui.SignupNew"
     android:nestedScrollingEnabled="true">
@@ -29,7 +29,7 @@
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">
-                <ImageView android:src="@drawable/ic_name_40dp"
+                <ImageView android:src="@drawable/ic_name_grey40dp"
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="Nombre"
@@ -42,7 +42,7 @@
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">>
-                <ImageView android:src="@drawable/ic_email_40dp"
+                <ImageView android:src="@drawable/ic_email_grey40dp"
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="E-mail"
@@ -55,7 +55,7 @@
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">
-                <ImageView android:src="@drawable/ic_phone_40dp"
+                <ImageView android:src="@drawable/ic_phone_grey40dp"
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="Teléfono"
@@ -68,9 +68,8 @@
 
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">
-                <ImageView android:src="@drawable/ic_password_40dp"
+                <ImageView android:src="@drawable/ic_password_grey40dp"
                     android:layout_weight="0.7"
-                    android:layout_height="wrap_content"
                     style="@style/Icons"/>
                 <EditText android:hint="Contraseña"
                     android:id="@+id/PasswordText"
