@@ -34,7 +34,7 @@
                     style="@style/Icons"/>
                 <EditText android:hint="Nombre"
                     android:id="@+id/GivenNameText"
-                    android:inputType="textPersonName"
+                    android:inputType="textPersonName|textCapWords"
                     android:layout_weight="0.3"
                     style="@style/TextFields"/>
             </LinearLayout>

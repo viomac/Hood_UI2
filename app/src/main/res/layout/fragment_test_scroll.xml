@@ -5,33 +5,64 @@
     android:orientation="vertical"
     android:background="#ffEEEEEE"
     android:weightSum="6"
-    tools:context="com.example.richit.hood_ui.login_new"
-    android:nestedScrollingEnabled="true">
+    tools:context="com.example.richit.hood_ui.SignupNew"
+
+    android:isScrollContainer="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_weight="5.3">
+        android:layout_weight="5.3"
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="1"
-            android:weightSum="8"
-            android:layout_marginTop="50dp">
+            android:layout_weight="3"
+            android:weightSum="10"
+            android:gravity="center">
+
             <TextView android:layout_weight="1"
                 android:id="@+id/ErrorLabel"
+                android:text="¡Lo sentimos! Este usuario ya existe."
                 android:gravity="center"
                 style="@style/ErrorAlert"/>
+
             <LinearLayout android:layout_weight="1"
                 style="@style/FieldContainer">
+                <ImageView android:src="@drawable/ic_name_grey40dp"
+                    android:layout_weight="0.7"
+                    style="@style/Icons"/>
+                <EditText android:hint="Nombre"
+                    android:id="@+id/GivenNameText"
+                    android:inputType="textPersonName"
+                    android:layout_weight="0.3"
+                    style="@style/TextFields"/>
+            </LinearLayout>
+            <ImageView style="@style/HorizontalSeparator"/>
+
+            <LinearLayout android:layout_weight="1"
+                style="@style/FieldContainer">>
                 <ImageView android:src="@drawable/ic_email_grey40dp"
                     android:layout_weight="0.7"
                     style="@style/Icons"/>
                 <EditText android:hint="E-mail"
                     android:id="@+id/EmailText"
                     android:inputType="textEmailAddress"
+                    android:layout_weight="0.3"
+                    style="@style/TextFields"/>
+            </LinearLayout>
+            <ImageView style="@style/HorizontalSeparator"/>
+
+            <LinearLayout android:layout_weight="1"
+                style="@style/FieldContainer">
+                <ImageView android:src="@drawable/ic_phone_grey40dp"
+                    android:layout_weight="0.7"
+                    style="@style/Icons"/>
+                <EditText android:hint="Teléfono"
+                    android:id="@+id/PhoneNumberText"
+                    android:inputType="phone"
                     android:layout_weight="0.3"
                     style="@style/TextFields"/>
             </LinearLayout>
@@ -49,23 +80,21 @@
                     style="@style/TextFields"/>
             </LinearLayout>
             <ImageView style="@style/HorizontalSeparator"/>
-
-            <TextView  android:text="Olvidé mi contraseña"
-                android:id="@+id/ForgotPassword"
-                android:gravity="end"
-                android:paddingRight="30dp"
-                android:layout_marginTop="10dp"
-                style="@style/ForgotPassword" />
         </LinearLayout>
-    </LinearLayout>
+        <LinearLayout android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
 
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
-        <Button android:text="CONTINUAR"
-            android:id="@+id/LoginButton"
+        <Button android:text="Continuar"
+            android:id="@+id/SignupButton"
             android:layout_alignParentBottom="true"
             style="@style/ContinueButton" />
     </LinearLayout>
+
 </LinearLayout>

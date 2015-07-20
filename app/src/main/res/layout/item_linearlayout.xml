@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/product"
+    android:layout_height="148dp">
+            <LinearLayout
+            android:id="@+id/ProductImageContainer"
+            android:background="#a1000000"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical">
+            <RelativeLayout
+                android:id="@+id/ProductImageProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/ProductImage"
+                android:layout_width="148dp"
+                android:layout_height="148dp"
+                android:padding="5dp"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ProductInformation"
+            android:layout_width="234dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true">
+            <TextView android:text="Danup Piña Colada"
+                android:id="@+id/ProductName"
+                android:layout_marginTop="25dp"
+                android:textSize="20sp"
+                style="@style/ProductItemText"/>
+            <TextView android:text="350ml"
+                android:id="@+id/ProductContent"
+                android:layout_below="@+id/ProductName"
+                android:textSize="20sp"
+                style="@style/ProductItemText"/>
+            <TextView android:text="$8.50"
+                android:layout_below="@+id/ProductContent"
+                android:id="@+id/ProductPrice"
+                android:textSize="15sp"
+                android:textColor="#ffD3FFB6"
+                android:layout_marginTop="8dp"
+                style="@style/ProductItemText"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="right">
+                <EditText android:text="0"
+                    android:id="@+id/ProductCounter"
+                    style="@style/ProductCounter"/>
+                <ImageButton
+                    android:id="@+id/AddToCartButton"
+                    android:src="@drawable/ic_add_40dp"
+                    style="@style/AddIcon"/>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

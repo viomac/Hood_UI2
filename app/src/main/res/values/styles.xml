@@ -1,11 +1,13 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- <style name="AppTheme" parent="android:Theme.Holo.Light"> -->
         <!-- Customize your theme here. -->
-    </style>
+    <!-- <item name="android:actionBarStyle">@style/MyActionBar</item> -->
+    <!-- </style> -->
 
-    <!-- *****************  Main  ******************** -->
+
+<!-- *****************  Main  ******************** -->
     <style name="MainLogo">
         <item name="android:layout_marginTop">60dp</item>
         <item name="android:layout_width">220dp</item>
@@ -80,5 +82,39 @@
         <item name="android:textColor">#ff4C4C4C</item>
     </style>
 
+    <style name="ForgotPassword">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fffff085</item>
+        <item name="android:textSize">6.5pt</item>
+    </style>
+
+    <!-- *************  Product Items  ************* -->
+    <style name="ProductItemText">
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AddIcon">
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:background">#00ffffff</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="ProductCounter">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#ffB6f28f</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:paddingLeft">3dp</item>
+    </style>
 
 </resources>

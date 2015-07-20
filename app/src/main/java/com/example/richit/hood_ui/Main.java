@@ -14,7 +14,7 @@ public class Main extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
     }
 
 

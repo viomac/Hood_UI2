@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ProductImageContainer"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="#ffbfd1bd"
+        android:paddingLeft="10dp">
+        <RelativeLayout
+            android:id="@+id/ProductImageProgressBar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="#ff3dd1a1"
+            android:gravity="center">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/ProductImage"
+            android:layout_width="148dp"
+            android:layout_height="148dp"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:background="#ff000000"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ProductInformation"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="#ff9dae65"
+        android:paddingLeft="10dp">
+        <TextView android:background="#ff7a9912"
+            android:id="@+id/ProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:text="Coca Cola 150 ml" />
+        <TextView android:background="#ff1f995f"
+            android:id="@+id/ProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dip"
+            android:textColor="#B2B2B2"
+            android:textStyle="italic"
+            android:text="$14.50" />
+        <ImageButton
+            android:src="@drawable/add_product_icon"
+            android:id="@+id/AddToCartButton"
+            android:scaleType="centerCrop"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left" />
+    </LinearLayout>
+
+</LinearLayout>
